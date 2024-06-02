@@ -42,21 +42,10 @@ INSERT INTO Dosen (kd_ds, nama) VALUES
 SELECT * FROM Dosen;
 `````
 Output :
-![alt text](Screenshot/H1.png)
+![alt text](![Screenshot 2024-06-02 223749](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/ba3ef10e-4e4f-4cfd-9e5e-07a99de6afce)
+)
 
 `````
-CREATE TABLE Mahasiswa(
-    nim VARCHAR(50) NOT NULL PRIMARY KEY,
-    nama VARCHAR(100) NOT NULL,
-    jk ENUM('L', 'P'),
-    tgl_lahir DATE,
-    jalan VARCHAR(30),
-    Kota VARCHAR(30),
-    kodepos VARCHAR(20),
-    no_hp VARCHAR(20),
-    kd_ds VARCHAR(50),
-    FOREIGN KEY (kd_ds) REFERENCES Dosen(kd_ds)
-);
 INSERT INTO Mahasiswa (nim, nama, jk, tgl_lahir, jalan, Kota, kodepos, no_hp, kd_ds) VALUES
     ('1812345', 'Ari Santoso', 'L', '1999-10-11', 'Jl. Bekasi', 'Bekasi', '17114', '081234567890', 'DS002'),
     ('1823456', 'Dina Marlina', 'P', '1998-11-20', 'Jl. Jakarta', 'Jakarta', '12110', '081234567891', NULL),
@@ -74,7 +63,8 @@ INSERT INTO Mahasiswa (nim, nama, jk, tgl_lahir, jalan, Kota, kodepos, no_hp, kd
 SELECT * FROM Mahasiswa;
 `````
 Output :
-![alt text](Screenshot/H2.png)
+![alt text](![Screenshot 2024-06-02 223818](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/dff5bf4c-d726-4169-a731-eb7e4f278d7c)
+)
 
 `````
 CREATE TABLE Matakuliah(
@@ -96,7 +86,8 @@ INSERT INTO Matakuliah (kd_mk, nama, sks) VALUES
 SELECT * FROM Matakuliah;
 `````
 Output :
-![alt text](Screenshot/H3.png)
+![alt text](![Screenshot 2024-06-02 223844](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/825063df-33be-4834-b150-f9ae306485ba)
+)
 
 `````
 CREATE TABLE JadwalMengajar(
@@ -123,7 +114,8 @@ INSERT INTO JadwalMengajar (kd_mk, kd_ds, hari, jam, ruang) VALUES
 SELECT * FROM JadwalMengajar;
 `````
 Output :
-![alt text](Screenshot/H4.png)
+![alt text](![Screenshot 2024-06-02 223905](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/1dcc37b7-443a-486d-ba9d-ed5c7a973589)
+)
 
 `````
 CREATE TABLE KRSMahasiswa(
@@ -149,7 +141,8 @@ INSERT INTO KRSMahasiswa (nim, kd_mk, kd_ds, semester) VALUES
 SELECT * FROM KRSMahasiswa;
 `````
 Output :
-![alt text](Screenshot/H5.png)
+![alt text](![Screenshot 2024-06-02 223930](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/d2e0a57e-0f83-472c-8fea-b864caadb5a1)
+)
 
 # Latihan
 - JOIN table Mahasiswa dan Dosen
@@ -158,7 +151,8 @@ SELECT Mahasiswa.nim, Mahasiswa.nama, Mahasiswa.jk, Dosen.nama AS "Dosen PA"
 FROM Mahasiswa INNER JOIN Dosen ON Dosen.kd_ds = Mahasiswa.kd_ds;
 `````
 Output :
-![alt text](Screenshot/J1.png)
+![alt text](![Screenshot 2024-06-02 223948](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/dfa0ca30-97da-4fe7-b248-d3816b549265)
+)
 
 - LEFT JOIN table Mahasiswa dan Dosen
 `````
@@ -166,7 +160,8 @@ SELECT Mahasiswa.nim, Mahasiswa.nama, Mahasiswa.jk, Dosen.nama AS "Dosen PA"
 FROM Mahasiswa LEFT JOIN Dosen ON Dosen.kd_ds = Mahasiswa.kd_ds;
 `````
 Output:
-![alt text](Screenshot/J2.png)
+![alt text](![Screenshot 2024-06-02 224009](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/c8633659-dcef-4110-980b-443f533a3221)
+)
 
 - JOIN table JadwalMengajar, Dosen, dan Matakuliah
 `````
@@ -176,7 +171,8 @@ LEFT JOIN Matakuliah ON JadwalMengajar.kd_mk = Matakuliah.kd_mk
 LEFT JOIN Dosen ON JadwalMengajar.kd_ds = Dosen.kd_ds;
 `````
 Output:
-![alt text](Screenshot/J3.png)
+![alt text](![Screenshot 2024-06-02 224034](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/b7843913-906f-4f62-bf1f-a8291892dac5)
+)
 
 - JOIN table JadwalMengajar, Dosen, dan Matakuliah
 `````
@@ -186,7 +182,8 @@ LEFT JOIN Matakuliah ON JadwalMengajar.kd_mk = Matakuliah.kd_mk
 LEFT JOIN Dosen ON JadwalMengajar.kd_ds = Dosen.kd_ds;
 `````
 Output :
-![alt text](Screenshot/J4.png)
+![alt text](![Screenshot 2024-06-02 224059](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/17246921-0d01-4606-a442-7bc82f97bbf7)
+)
 
 - JOIN tabel KRSMahasiswa, Mahasiswa, Matakuliah, dan Dosen
 `````
