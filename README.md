@@ -7,15 +7,18 @@
 
 # Soal Latihan Praktikum 
 
-![alt text](Screenshot/T1.png)
+![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/fa791078-8c1e-4b48-b280-91a7bf71e35c)
+![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/0e8800e3-8557-489f-bad6-c7cedefacd6b)
+)
 
-![alt text](Screenshot/T2.png)
+![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/cd3d29a2-8c69-4ba3-a812-31dde92c460f)
+)
 
-![alt text](Screenshot/T3.png)
+![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/6d7b0527-250a-4094-8bc2-f6f8d723ed6f)
+)
 
-![alt text](Screenshot/T4.png)
-
-![alt text](Screenshot/T5.png)
+![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/940231c1-2b56-4165-8c45-f205d752f9d8)
+)
 
 ## Latihan
 
