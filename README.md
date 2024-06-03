@@ -7,11 +7,11 @@
 
 # Soal Latihan Praktikum 
 
-![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/fa791078-8c1e-4b48-b280-91a7bf71e35c)
-![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/0e8800e3-8557-489f-bad6-c7cedefacd6b)
-![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/cd3d29a2-8c69-4ba3-a812-31dde92c460f)
-![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/6d7b0527-250a-4094-8bc2-f6f8d723ed6f)
-![alt text](![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/940231c1-2b56-4165-8c45-f205d752f9d8)
+(![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/fa791078-8c1e-4b48-b280-91a7bf71e35c)
+(![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/0e8800e3-8557-489f-bad6-c7cedefacd6b)
+(![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/cd3d29a2-8c69-4ba3-a812-31dde92c460f)
+(![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/6d7b0527-250a-4094-8bc2-f6f8d723ed6f)
+(![image](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/940231c1-2b56-4165-8c45-f205d752f9d8)
 
 
 ## Latihan
@@ -39,7 +39,7 @@ INSERT INTO Dosen (kd_ds, nama) VALUES
 SELECT * FROM Dosen;
 `````
 Output :
-![alt text](![Screenshot 2024-06-02 223749](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/ba3ef10e-4e4f-4cfd-9e5e-07a99de6afce)
+(![Screenshot 2024-06-02 223749](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/ba3ef10e-4e4f-4cfd-9e5e-07a99de6afce)
 )
 
 `````
@@ -60,7 +60,7 @@ INSERT INTO Mahasiswa (nim, nama, jk, tgl_lahir, jalan, Kota, kodepos, no_hp, kd
 SELECT * FROM Mahasiswa;
 `````
 Output :
-![alt text](![Screenshot 2024-06-02 223818](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/dff5bf4c-d726-4169-a731-eb7e4f278d7c)
+(![Screenshot 2024-06-02 223818](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/dff5bf4c-d726-4169-a731-eb7e4f278d7c)
 )
 
 `````
@@ -83,7 +83,7 @@ INSERT INTO Matakuliah (kd_mk, nama, sks) VALUES
 SELECT * FROM Matakuliah;
 `````
 Output :
-![alt text](![Screenshot 2024-06-02 223844](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/825063df-33be-4834-b150-f9ae306485ba)
+(![Screenshot 2024-06-02 223844](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/825063df-33be-4834-b150-f9ae306485ba)
 )
 
 `````
@@ -111,7 +111,7 @@ INSERT INTO JadwalMengajar (kd_mk, kd_ds, hari, jam, ruang) VALUES
 SELECT * FROM JadwalMengajar;
 `````
 Output :
-![alt text](![Screenshot 2024-06-02 223905](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/1dcc37b7-443a-486d-ba9d-ed5c7a973589)
+(![Screenshot 2024-06-02 223905](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/1dcc37b7-443a-486d-ba9d-ed5c7a973589)
 )
 
 `````
@@ -138,7 +138,7 @@ INSERT INTO KRSMahasiswa (nim, kd_mk, kd_ds, semester) VALUES
 SELECT * FROM KRSMahasiswa;
 `````
 Output :
-![alt text](![Screenshot 2024-06-02 223930](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/d2e0a57e-0f83-472c-8fea-b864caadb5a1)
+(![Screenshot 2024-06-02 223930](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/d2e0a57e-0f83-472c-8fea-b864caadb5a1)
 )
 
 # Latihan
@@ -148,7 +148,7 @@ SELECT Mahasiswa.nim, Mahasiswa.nama, Mahasiswa.jk, Dosen.nama AS "Dosen PA"
 FROM Mahasiswa INNER JOIN Dosen ON Dosen.kd_ds = Mahasiswa.kd_ds;
 `````
 Output :
-![alt text](![Screenshot 2024-06-02 223948](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/dfa0ca30-97da-4fe7-b248-d3816b549265)
+(![Screenshot 2024-06-02 223948](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/dfa0ca30-97da-4fe7-b248-d3816b549265)
 )
 
 - LEFT JOIN table Mahasiswa dan Dosen
@@ -168,7 +168,7 @@ LEFT JOIN Matakuliah ON JadwalMengajar.kd_mk = Matakuliah.kd_mk
 LEFT JOIN Dosen ON JadwalMengajar.kd_ds = Dosen.kd_ds;
 `````
 Output:
-![alt text](![Screenshot 2024-06-02 224034](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/b7843913-906f-4f62-bf1f-a8291892dac5)
+(![Screenshot 2024-06-02 224034](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/b7843913-906f-4f62-bf1f-a8291892dac5)
 )
 
 - JOIN table JadwalMengajar, Dosen, dan Matakuliah
@@ -179,7 +179,7 @@ LEFT JOIN Matakuliah ON JadwalMengajar.kd_mk = Matakuliah.kd_mk
 LEFT JOIN Dosen ON JadwalMengajar.kd_ds = Dosen.kd_ds;
 `````
 Output :
-![alt text](![Screenshot 2024-06-02 224059](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/17246921-0d01-4606-a442-7bc82f97bbf7)
+(![Screenshot 2024-06-02 224059](https://github.com/nurulaisyah14/TugasPraktikum5/assets/148174512/17246921-0d01-4606-a442-7bc82f97bbf7)
 )
 
 - JOIN tabel KRSMahasiswa, Mahasiswa, Matakuliah, dan Dosen
@@ -191,6 +191,4 @@ JOIN Matakuliah ON KRSMahasiswa.kd_mk = Matakuliah.kd_mk
 JOIN Dosen ON KRSMahasiswa.kd_ds = Dosen.kd_ds;
 `````
 Output :
-![alt text](Screenshot/J5.png)
-
-## SELESAI <img align="center" alt="Ikhsan-Python" height="40" width="45" src="https://em-content.zobj.net/source/microsoft-teams/337/student_1f9d1-200d-1f393.png"> <img align="center" alt="Ikhsan-Python" height="40" width="45" src="https://em-content.zobj.net/thumbs/160/twitter/348/flag-indonesia_1f1ee-1f1e9.png">
+(Screenshot/J5.png)
